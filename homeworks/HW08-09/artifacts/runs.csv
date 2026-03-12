@@ -1,0 +1,83 @@
+,experiment_id,dataset,seed,model_summary,optimizer,lr,momentum,weight_decay,epochs_trained,best_val_accuracy,best_val_loss
+0,E1,KMNIST,42,"MLP(
+  (net): Sequential(
+    (0): Flatten(start_dim=1, end_dim=-1)
+    (1): Linear(in_features=784, out_features=256, bias=True)
+    (2): ReLU()
+    (3): Linear(in_features=256, out_features=128, bias=True)
+    (4): ReLU()
+    (5): Linear(in_features=128, out_features=10, bias=True)
+  )
+)",Adam,0.001,0.0,0.0,10,0.9728058510638298,0.2576465148558008
+1,E2,KMNIST,42,"MLP(
+  (net): Sequential(
+    (0): Flatten(start_dim=1, end_dim=-1)
+    (1): Linear(in_features=784, out_features=256, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.15, inplace=False)
+    (4): Linear(in_features=256, out_features=128, bias=True)
+    (5): ReLU()
+    (6): Dropout(p=0.15, inplace=False)
+    (7): Linear(in_features=128, out_features=10, bias=True)
+  )
+)",Adam,0.001,0.0,0.0,10,0.970811170212766,0.20529186402229552
+2,E3,KMNIST,42,"MLP(
+  (net): Sequential(
+    (0): Flatten(start_dim=1, end_dim=-1)
+    (1): Linear(in_features=784, out_features=256, bias=True)
+    (2): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (3): ReLU()
+    (4): Linear(in_features=256, out_features=128, bias=True)
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU()
+    (7): Linear(in_features=128, out_features=10, bias=True)
+  )
+)",Adam,0.001,0.0,0.0,10,0.9795212765957447,0.12075308156298831
+3,E4,KMNIST,42,"MLP(
+  (net): Sequential(
+    (0): Flatten(start_dim=1, end_dim=-1)
+    (1): Linear(in_features=784, out_features=256, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.15, inplace=False)
+    (4): Linear(in_features=256, out_features=128, bias=True)
+    (5): ReLU()
+    (6): Dropout(p=0.15, inplace=False)
+    (7): Linear(in_features=128, out_features=10, bias=True)
+  )
+)",Adam,0.001,0.0,0.0,10,0.970877659574468,0.23908591524083564
+4,O1,KMNIST,42,"MLP(
+  (net): Sequential(
+    (0): Flatten(start_dim=1, end_dim=-1)
+    (1): Linear(in_features=784, out_features=256, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.15, inplace=False)
+    (4): Linear(in_features=256, out_features=128, bias=True)
+    (5): ReLU()
+    (6): Dropout(p=0.15, inplace=False)
+    (7): Linear(in_features=128, out_features=10, bias=True)
+  )
+)",Adam,0.1,0.0,0.0,6,0.11252216313113557,2.312600382338179
+5,O2,KMNIST,42,"MLP(
+  (net): Sequential(
+    (0): Flatten(start_dim=1, end_dim=-1)
+    (1): Linear(in_features=784, out_features=256, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.15, inplace=False)
+    (4): Linear(in_features=256, out_features=128, bias=True)
+    (5): ReLU()
+    (6): Dropout(p=0.15, inplace=False)
+    (7): Linear(in_features=128, out_features=10, bias=True)
+  )
+)",Adam,1e-05,0.0,0.0,6,0.1068040780247526,2.301070612034899
+6,O3,KMNIST,42,"MLP(
+  (net): Sequential(
+    (0): Flatten(start_dim=1, end_dim=-1)
+    (1): Linear(in_features=784, out_features=256, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.15, inplace=False)
+    (4): Linear(in_features=256, out_features=128, bias=True)
+    (5): ReLU()
+    (6): Dropout(p=0.15, inplace=False)
+    (7): Linear(in_features=128, out_features=10, bias=True)
+  )
+)",SGD,0.001,0.9,0.0001,15,0.9534796098445324,0.536920494094808
