@@ -1,0 +1,7 @@
+config,val_acc
+C1_simple_base,0.53
+C2_simple_aug,0.498
+C3_resnet_head,0.954
+C4_resnet_finetune,0.965
+PartB_Seg_V1,0.0
+PartB_Seg_V2,0.0
